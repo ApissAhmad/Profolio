@@ -1,0 +1,382 @@
+:root {
+    --aqua: aqua;
+}
+
+html::-webkit-scrollbar-track {
+    background: #222;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--aqua);
+}
+
+/* The sidebar menu */
+.sidebar {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidebar */
+}
+
+.sidebar img {
+    /* align-items:center; */
+    height: 35%;
+    width: 84%;
+    margin: auto;
+    border-radius: 25%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: .7rem solid var(--aqua);
+}
+
+/* The sidebar links */
+.sidebar a {
+    display: block;
+    padding: 1rem;
+    margin: 1.5rem;
+    background: grey;
+    color: black;
+    font-size: 1rem;
+    border-radius: 5rem;
+    text-align: center;
+}
+
+.sidebar .name {
+    font-size: 1.25rem;
+    color: #fff;
+}
+
+.sidebar .post {
+    font-size: 1rem;
+    color: #eee;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+    color: var(--aqua)
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+
+.openbtn:hover {
+    background-color: #444;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    /* If you want a transition effect */
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidebar {
+        padding-top: 15px;
+    }
+
+    .sidebar a {
+        font-size: 18px;
+    }
+}
+
+/* Home Section */
+
+.header .home {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-flow: column;
+    padding: 0 15rem;
+}
+
+hr {
+        border: 10px dashed var(--aqua);
+        border-radius: 5px;
+
+}
+
+.home h3 {
+    font-size: 2.5rem;
+    color: #fff;
+    text-align: center;
+}
+
+.home h1 {
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.home h1 span {
+    color: var(--aqua);
+}
+
+.home p {
+    font-size: 2rem;
+    color: #eee;
+    padding: 1rem 0;
+}
+
+body {
+    background: #111;
+    overflow-x: hidden;
+}
+
+/* about */
+
+.about .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+}
+
+.about .row .info {
+    flex: 1 1 1rem;
+    padding: 1rem 1rem;
+    padding-left: 2rem;
+}
+
+.about .row .info h3 {
+    font-size: 1.5rem;
+    color: var(--aqua);
+    /* padding: 1rem 0; */
+    font-weight: normal;
+}
+
+.about .row .info h3 span {
+    color: #eee;
+    padding: 1rem;
+}
+
+.about .row .info .a{
+    text-align:center;
+}
+
+.about .row .counter {
+    flex: 1 1 48rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about .row .counter .box {
+    width: 15rem;
+    background: #222;
+    text-align: center;
+    padding: 2rem;
+    margin: 2rem;
+}
+
+.about .row .counter span {
+    font-size: 3rem;
+    color: var(--aqua);
+
+}
+
+.about h2{
+    color: var(--aqua);
+    font-size: 2rem;
+}
+
+.about .box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0.5rem 0;
+}
+
+.about .box-container .box {
+    height: 20rem;
+    width: 10rem;
+    border-radius: 1rem;
+    margin: 1rem;
+    overflow: hidden;
+    cursor: pointer;
+
+}
+
+/* Education */
+
+.education .box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0.8rem;
+    padding-left: 1rem;
+}
+
+.education .box-container .box {
+    flex: 1 1 35rem;
+    width: 25rem;
+    margin: 4rem 1rem;
+    padding-left: 4rem;
+    border-left: .2rem solid #ffff;
+    position: relative;
+}
+
+.education .box-container .box span {
+    font-size: 1.5rem;
+    background: #222;
+    color: #fff;
+    border-radius: 4rem;
+}
+
+.education .box-container .box h1 {
+    font-size: 2rem;
+    color: var(--aqua);
+    padding: 1rem;
+}
+
+.education .box-container .box p {
+    color: #fff;
+}
+
+.education .box-container .box i {
+    position: absolute;
+    top: -1.5rem;
+    left: -2.5rem;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    background: var(--aqua)
+}
+
+.education .box-container .box {
+    width: 100%;
+}
+
+.portfolio .box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
+
+.portfolio .box-container .box {
+    height: 20rem;
+    width: 25rem;
+    border-radius: 1rem;
+    margin: 2rem;
+    overflow: hidden;
+    cursor: pointer;
+
+}
+
+.contact .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: wrap;
+}
+
+.contact .row .content {
+    flex: 1 1 30rem;
+    padding: 4rem;
+    padding-bottom: 0;
+}
+
+.contact .row form {
+    flex: 1 1 45rem;
+    padding: 2rem;
+    margin: 2rem;
+    margin-bottom: 4rem;
+}
+
+.contact .row form .box {
+    padding: 1.5rem;
+    margin: 1rem 0;
+    background: #3333;
+    color: #fff;
+    text-transform: none;
+    font-size: 1.7rem;
+    width: 100%;
+}
+
+.contact .row form .box {
+    text-transform: capitalize;
+}
+
+.content .row form .message {
+    height: 15rem;
+    resize: none;
+}
+
+.contact .row .content .title {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+
+.contact .row .content .info h3 {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    color: #eee;
+    padding: 1rem 0;
+    font-weight: normal;
+}
+
+.contact .row .content .info h3 i {
+    padding-right: rem;
+    color: var(--aqua);
+}
+
+.contact .row form{
+    margin:3rem 0;
+}
+
+.top{
+    position:fixed;
+    bottom:7.5rem;right:2rem;
+    z-index:100;
+}
+
+.contact span{
+    color:var(--aqua)
+}
+
+.contact h2{
+    font-size: 2rem;
+    color:white;
+}
